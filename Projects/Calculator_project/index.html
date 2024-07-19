@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div class="calculator_container">
+    <div class="input_container">
+        <input id="number_input" autofocus type="text">
+    </div>
+    <div class="button_container">
+        <div class="top_functions_container">
+            <button class="top_functions_buttuns" id="AC" onclick="clearInput()">AC</button>
+            <button class="top_functions_buttuns" id="PM" onclick="deleteLast()">DEl</button>
+            <button class="top_functions_buttuns" id="persent"onclick="appent('%')">%</button>
+            <button class="top_functions_buttuns" id="delene" onclick="appent('/')">/</button>
+        </div>
+        <div class="numbers_container">
+            <button class="numbers_buttons" id="number_seven" onclick="appent('7')">7</button>
+            <button class="numbers_buttons" id="number_eight" onclick="appent('8')">8</button>
+            <button class="numbers_buttons" id="number_nine" onclick="appent('9')">9</button>
+            <button class="numbers_buttons" id="number_four" onclick="appent('4')">4</button>
+            <button class="numbers_buttons" id="number_five" onclick="appent('5')">5</button>
+            <button class="numbers_buttons" id="number_six" onclick="appent('6')">6</button>
+            <button class="numbers_buttons" id="number_one" onclick="appent('1')">1</button>
+            <button class="numbers_buttons" id="number_two" onclick="appent('2')">2</button>
+            <button class="numbers_buttons" id="number_three" onclick="appent('3')">3</button>
+            <button class="numbers_buttons" id="number_zero" onclick="appent('0')">0</button>
+            <button class="numbers_buttons" id="dot" onclick="appent('.')">.</button>
+        </div>
+        <div class="right_functions_container">
+            <button class="right_functions_buttons" id="xSymbol"onclick="appent('*')" >*</button>
+            <button class="right_functions_buttons"id="-Symbol" onclick="appent('-')">-</button>
+            <button class="right_functions_buttons" id="+Symbol" onclick="appent('+')">+</button>
+            <button class="right_functions_buttons" id="equell" onclick="result()">=</button>
+        </div>
+    </div>
+   </div> 
+   <script src="script.js"></script> 
+</body>
+</html>
